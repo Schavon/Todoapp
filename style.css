@@ -166,15 +166,22 @@ margin: 0;
 
  }
 
+/*
+ul.todo#completed  li .buttons button.complete {
+  background-color: green;
+  border-radius: 50%;
+}
+*/
+
  ul.todo li .buttons button.remove:hover {
 
    border-radius: 50%;
-   background-color: red;
+   background-color: rgba(44,62,80,0.15);
  }
 
  ul.todo li .buttons button.complete:hover {
    border-radius: 50%;
-   background-color: green;
+   background-color: rgba(44,62,80,0.15);
  }
 
  img {
