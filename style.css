@@ -2,6 +2,9 @@
 
 body {
   background-color: #e7e5dd;
+  padding: 80px 0 0 0;
+  width: 320px;
+  height: 568px;
 }
 
 body, input, button {
@@ -77,10 +80,103 @@ header input {
 
  header button img {
    width: 16px;
-   height: 15px;
+   height: 16px;
    position: absolute;
    top: 50%;
    left: 50%;
    margin: -8px 0 0 -8px;
 
+ }
+
+ .container {
+   width: 100%;
+   float: left;
+   padding: 15px;
+ }
+
+ ul.todo {
+   width: 100%;
+   float: left;
+   list-style-type: none;
+ }
+
+ ul.todo li {
+   width: 100%;
+   min-height: 50px;
+   float: left;
+   font-size: 14px;
+   font-weight: 500;
+   color: #444;
+   line-height: 22px;
+   height: 50px;
+   background: #fff;
+   border-radius: 5px;
+   position: relative;
+   box-shadow: 0px 1px 2px rgba(44,62,80,0.10);
+   margin: 0 0 10px 0;
+   padding: 14px 100px 14px 14px;
+ }
+
+ ul.todo li:last-of-type {
+margin: 0;
+ }
+
+ ul.todo li .buttons {
+   width: 100px;
+   height: 50px;
+   position: absolute;
+   top:0;
+   right: 0;
+
+ }
+
+ ul.todo li .buttons button {
+   width: 50px;
+   height: 50px;
+   float: left;
+   background: none;
+   position: relative;
+   box-shadow: none;
+   border: 0px;
+   outline: none;
+   -webkit-appearance:none;
+   -moz-appearance:none;
+   -ms-appearance:none;
+   -o-appearance:none;
+   -webkit-appearance:none;
+   appearance:none;
+ }
+
+ ul.todo li .buttons button:last-of-type:before {
+   content: '';
+   width: 1px;
+   height: 30px;
+   position: absolute;
+   top: 10px;
+   left: 0;
+
+ }
+
+ ul.todo li .buttons button img {
+   width: 22px;
+   height: 22px;
+   left: 0;
+   top: 10px;
+   background: #edf01;
+
+ }
+
+ ul.todo li .buttons button.remove:hover {
+
+   border-radius: 50%;
+   background-color: red;
+ }
+
+ ul.todo li .buttons button.complete:hover {
+   border-radius: 50%;
+   background-color: green;
+ }
+
+ img {
+   border-radius: 50%;
  }
