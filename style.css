@@ -166,12 +166,11 @@ margin: 0;
 
  }
 
-/*
+
 ul.todo#completed  li .buttons button.complete {
   background-color: green;
   border-radius: 50%;
 }
-*/
 
  ul.todo li .buttons button.remove:hover {
 
